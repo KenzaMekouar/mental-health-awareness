@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Mental Health Awareness</h1>
+        <p>Imagine a world where seeking help isn’t judged.</p>
+    </header>
+
+    <section class="campaign">
+        <div class="message">
+            <h2 class="dynamic-text">Imagine someone in therapy.</h2>
+            <p class="subtext">Is he depressed?</p>
+            <p class="cta">Now imagine a world where seeking help is normal.</p>
+        </div>
+    </section>
+
+    <section class="campaign">
+        <div class="message">
+            <h2 class="dynamic-text">Imagine a man crying.</h2>
+            <p class="subtext">Is he broken?</p>
+            <p class="cta">Now imagine a world where emotions aren’t gendered.</p>
+        </div>
+    </section>
+
+    <section class="resources">
+        <h2>Need Support?</h2>
+        <p>If you or someone you know needs help, visit these trusted resources:</p>
+        <ul>
+            <li><a href="#">Mental Health America</a></li>
+            <li><a href="#">National Suicide Prevention Lifeline</a></li>
+            <li><a href="#">Therapy Finder</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Spread awareness:</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+<script>
+    // Simple Text Animation
+    const messages = [
+        "Imagine someone in therapy.",
+        "Imagine a man crying.",
+        "Imagine someone skipping a party.",
+        "Imagine someone taking antidepressants."
+    ];
+
+    let index = 0;
+    setInterval(() => {
+        document.querySelector(".dynamic-text").textContent = messages[index];
+        index = (index + 1) % messages.length;
+    }, 4000);
+</script>
+
+</body>
+</html>
